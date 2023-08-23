@@ -5,13 +5,13 @@
 // PLEASE SUPPLY THE VALUES FOR THE VARIABLES BELOW. ###########################################
 //##############################################################################################
 // COPY AND PASTE THE SPREADSHEET ID OF THE LINKED SPREADSHEET BELOW. (Between quotes.)
-const SPREADSHEET_ID = "";
+const SPREADSHEET_ID = "1tGFtAJy4PU23k5_MXhytu-xZRcFYnSqmwCPB-gBOgjE";
 // COPY AND PASTE THE NAME OF THE FORM RESPONSE BELOW. (Between quotes.)
-const SHEET_ID = "";
+const SHEET_ID = "formResponses";
 // COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
-const CUSTOM_SCHEMA_NAME = "";
+const CUSTOM_SCHEMA_NAME = "Identity";
 // COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
-const CUSTOM_ATTRIBUTE = "";
+const CUSTOM_ATTRIBUTE = "idBadgeNumber";
 //##############################################################################################
 // NOTHING TO CHANGE BELOW THIS LINE. ##########################################################
 //##############################################################################################
@@ -25,16 +25,16 @@ function postNewCustomAttributeValue() {
   while(rowValues[rowCounter] && rowValues[rowCounter][0] != ""){
     rowCounter++;
   };
-  let newCustomAttributeValueCell = 'B' + rowCounter;
-  let userAccountCell = 'C' + rowCounter;
+  let newCustomAttributeValueCell = 'C' + rowCounter;
+  let userAccountCell = 'B' + rowCounter;
   const values = RESPONSES.getRange(newCustomAttributeValueCell + ':' + userAccountCell).getValues();
   // Attempt to update the custom attribute value for the user.
   try {
     let status = "The " + CUSTOM_ATTRIBUTE + " has not been changed.";
-    let update = '{' + '"customSchemas": {' + CUSTOM_SCHEMA_NAME + ' : {' + CUSTOM_ATTRIBUTE + ' : ' + values[0][0] + '}}}';
-    status = AdminDirectory.Users.update(update, values[0][1]);
+    let update = '{' + '"customSchemas": {' + CUSTOM_SCHEMA_NAME + ' : {' + CUSTOM_ATTRIBUTE + ' : ' + values[0][1] + '}}}';
+    status = AdminDirectory.Users.update(update, values[0][0]);
     if (status != "The " + CUSTOM_ATTRIBUTE + " has not been changed."){
-      status = "The " + CUSTOM_ATTRIBUTE + " for " + values[0][1] + " was succesfully changed to:" + values[0][0] + ".";
+      status = "The " + CUSTOM_ATTRIBUTE + " for " + values[0][0] + " was succesfully changed to:" + values[0][1] + ".";
       console.log(status);
     };
   } catch(error) {
