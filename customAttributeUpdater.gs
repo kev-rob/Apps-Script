@@ -5,13 +5,13 @@
 // PLEASE SUPPLY THE VALUES FOR THE VARIABLES BELOW. ###########################################
 //##############################################################################################
 // COPY AND PASTE THE SPREADSHEET ID OF THE LINKED SPREADSHEET BELOW. (Between quotes.)
-const SPREADSHEET_ID = "1tGFtAJy4PU23k5_MXhytu-xZRcFYnSqmwCPB-gBOgjE";
+const SPREADSHEET_ID = "";
 // COPY AND PASTE THE NAME OF THE FORM RESPONSE BELOW. (Between quotes.)
-const SHEET_ID = "formResponses";
+const SHEET_ID = "";
 // COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
-const CUSTOM_SCHEMA_NAME = "Identity";
+const CUSTOM_SCHEMA_NAME = "";
 // COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
-const CUSTOM_ATTRIBUTE = "idBadgeNumber";
+const CUSTOM_ATTRIBUTE = "";
 //##############################################################################################
 // NOTHING TO CHANGE BELOW THIS LINE. ##########################################################
 //##############################################################################################
