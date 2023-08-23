@@ -1,7 +1,7 @@
 //##############################################################################################
 // PLEASE SUPPLY THE VALUES FOR THE VARIABLES BELOW. ###########################################
 //##############################################################################################
-// COPY AND PASTE THE SPREADSHEET ID OF THE LINKED SPREADSHEET BELOW. (Between quotes.)
+// COPY AND PASTE THE SPREADSHEET ID OF THE LINKED SPREAD SHEET BELOW. (Between quotes.)
 const SPREADSHEET_ID = "";
 // COPY AND PASTE THE NAME OF THE FORM RESPONE BELOW. (Between quotes.)
 const SHEET_ID = "";
@@ -13,7 +13,7 @@ const CUSTOM_ATTRIBUTE = "";
 // NOTHING TO CHANGE BELOW THIS LINE. ##########################################################
 //##############################################################################################
 function postNewCustomAttributeValue() {
-  // Open the spreadhseet, the sheet, then get the most recent response. 
+  // Open the spread sheet, the sheet, then get the most recent response. 
   // Used in conjunction with a submission trigger.
   const RESPONSES_SS = SpreadsheetApp.openById('SHEET_ID');
   const RESPONSES = RESPONSES_SS.getSheetByName(SHEET_ID);
