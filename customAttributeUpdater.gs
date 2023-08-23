@@ -10,7 +10,7 @@ const SPREADSHEET_ID = "";
 const SHEET_ID = "";
 // COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
 const CUSTOM_SCHEMA_NAME = "";
-// COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'CATEGORY' BELOW. (Between quotes.)
+// COPY AND PASTE THE GOOGLE WORKSPACE CUSTOM ATTRIBUTE 'NAME' BELOW. (Between quotes.)
 const CUSTOM_ATTRIBUTE = "";
 //##############################################################################################
 // NOTHING TO CHANGE BELOW THIS LINE. ##########################################################
