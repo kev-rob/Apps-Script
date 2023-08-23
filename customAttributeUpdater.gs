@@ -1,5 +1,5 @@
 //##############################################################################################
-// THIS CODE REQUIRES YOU TO "ADD A SERVICE" IN YOUR GOOGLE APPS SCRIPT PROJECT:
+// THIS CODE REQUIRES YOU TO ADD A SERVICE IN YOUR GOOGLE APPS SCRIPT PROJECT:
 // ADMIN SDK API (IDENTIFIER: 'AdminDirectory')
 //##############################################################################################
 // PLEASE SUPPLY THE VALUES FOR THE VARIABLES BELOW. ###########################################
